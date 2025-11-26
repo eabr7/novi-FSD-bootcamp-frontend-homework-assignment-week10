@@ -1,7 +1,18 @@
-function tvSizes(bestTv) {
+import inchToCm from "./inchToCm.js";
 
-    return `${bestTv.availableSizes} `;
+
+function tvSizes(bestTv) {
+    let size = [];
+
+    for (let i = 0; i < bestTv.availableSizes.length; i++) {
+        let inches = bestTv.availableSizes[i];
+        size.push(`${inches} inches (${inchToCm(inches)} cm)`);
+    }
+
+    return size.join(' | ');
 
 }
 
 export default tvSizes;
+
+

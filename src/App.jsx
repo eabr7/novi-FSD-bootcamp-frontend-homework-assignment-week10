@@ -6,6 +6,7 @@ import {inventory, bestSellingTv} from "./constants/inventory.js";
 import tvName from "./helpers/tvName.js";
 import tvPrice from "./helpers/tvPrice.js";
 import tvSizes from "./helpers/tvSizes.js";
+import tvImage from './assets/tvImage.jpeg';
 
 function App() {
   return (
@@ -32,12 +33,12 @@ function App() {
               <section className="best-selling-container">
                   <h2>Best verkochte TV</h2>
                   <article className="best-tv">
-                      <span>
-                          <img src="/" alt="/"/>
+                      <span className="tv-image-box">
+                          <img src={tvImage} alt="Best stelling TV"/>
                       </span>
-                      <div>
+                      <div className="best-tv-info">
                         <p>{tvName(bestSellingTv)}</p>
-                        <p>{tvPrice(bestSellingTv)}</p>
+                        <p className="best-tv-price">{tvPrice(bestSellingTv)}</p>
                         <p>{tvSizes(bestSellingTv)}</p>
                       </div>
                   </article>

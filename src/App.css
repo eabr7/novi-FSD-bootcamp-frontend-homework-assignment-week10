@@ -90,12 +90,30 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    align-items: center;
     max-width: 50rem;
     height: auto;
     border: dashed grey;
+    background-color: lightgrey;
     margin: 10px;
     padding: 5px;
 }
+
+.tv-image-box {
+    max-width: 7rem;
+}
+
+.best-tv-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: large;
+}
+
+.best-tv-price {
+    font-weight: 800;
+}
+
