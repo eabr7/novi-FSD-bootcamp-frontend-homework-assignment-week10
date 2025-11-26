@@ -1,0 +1,101 @@
+
+
+/* CONTAINERS */
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed yellow;
+}
+
+.inventory-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50rem;
+    gap: 2rem;
+    height: auto;
+    border: dashed deeppink;
+    margin: 10px;
+    padding: 10px;
+}
+
+.all-tvs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 10px;
+}
+
+.best-selling-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50rem;
+    height: auto;
+    border: dashed deeppink;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* DASHBOARD */
+
+.sold-tvs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: palegreen;
+}
+
+.bought-tvs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.to-sell-tvs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+    color: darkred;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    background-color: indianred;
+}
+
+.best-tv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    max-width: 50rem;
+    height: auto;
+    border: dashed grey;
+    margin: 10px;
+    padding: 5px;
+}
