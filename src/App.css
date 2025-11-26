@@ -86,6 +86,8 @@
     background-color: indianred;
 }
 
+/* BEST TV */
+
 .best-tv {
     display: flex;
     flex-direction: row;
@@ -98,7 +100,7 @@
     border: dashed grey;
     background-color: lightgrey;
     margin: 10px;
-    padding: 5px;
+    padding: 6px;
 }
 
 .tv-image-box {
@@ -108,12 +110,26 @@
 .best-tv-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: flex-start;
     font-size: large;
 }
 
 .best-tv-price {
-    font-weight: 800;
+    font-size: 25px;
+}
+
+.icons {
+    width: 15px;
+}
+
+.options-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 2rem 0 2rem;
 }
 
