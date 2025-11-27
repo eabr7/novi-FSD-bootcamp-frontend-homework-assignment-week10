@@ -14,7 +14,7 @@ function App() {
   return (
       <>
           <main className="outer-container">
-              <section className="inventory-container">
+              <section className="inventory-container section">
                  <h1>Tech It Easy Dashboard</h1>
                  <h2>Verkoop overzicht</h2>
                  <div className="all-tvs">
@@ -32,7 +32,7 @@ function App() {
                     </article>
                  </div>
               </section>
-              <section className="best-selling-container">
+              <section className="best-selling-container section">
                   <h2>Best verkochte TV</h2>
                   <article className="best-tv">
                       <span className="tv-image-box">
@@ -57,7 +57,7 @@ function App() {
                       </div>
                   </article>
               </section>
-              <section className="all-tvs-container">
+              <section className="all-tvs-container section">
                   <h2>Alle TVs</h2>
                   <div className="all-tvs-buttons">
                       <button type="button" className="most-sold-button" onClick={() => console.log("Meest verkocht eerst")}>Meest verkocht eerst</button>

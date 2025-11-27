@@ -45,6 +45,12 @@
     padding: 10px;
 }
 
+.section {
+    width: min(50rem, 100%);
+    margin: 10px 0;
+    padding: 10px;
+}
+
 /* DASHBOARD */
 
 .sold-tvs {
