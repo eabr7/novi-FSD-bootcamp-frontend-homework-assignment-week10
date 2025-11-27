@@ -57,6 +57,14 @@ function App() {
                       </div>
                   </article>
               </section>
+              <section className="all-tvs-container">
+                  <h2>Alle TVs</h2>
+                  <div className="all-tvs-buttons">
+                      <button type="button" className="most-sold-button">Meest verkocht eerst</button>
+                      <button type="button" className="cheapest-button">Goedkoopste eerst</button>
+                      <button type="button" className="sport-button">Meest geschikt voor sport eerst</button>
+                  </div>
+              </section>
           </main>
       </>
   )

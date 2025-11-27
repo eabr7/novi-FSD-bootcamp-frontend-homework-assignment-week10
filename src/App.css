@@ -133,3 +133,31 @@
     padding: 0 2rem 0 2rem;
 }
 
+/* ALL TVs */
+
+.all-tvs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50rem;
+    gap: 2rem;
+    height: auto;
+    border: dashed deeppink;
+    margin: 10px;
+    padding: 10px;
+}
+
+.all-tvs-buttons {
+    border: dashed blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 50rem;
+    height: auto;
+    margin: 10px;
+    padding: 6px;
+}
