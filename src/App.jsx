@@ -60,9 +60,9 @@ function App() {
               <section className="all-tvs-container">
                   <h2>Alle TVs</h2>
                   <div className="all-tvs-buttons">
-                      <button type="button" className="most-sold-button">Meest verkocht eerst</button>
-                      <button type="button" className="cheapest-button">Goedkoopste eerst</button>
-                      <button type="button" className="sport-button">Meest geschikt voor sport eerst</button>
+                      <button type="button" className="most-sold-button" onClick={() => console.log("Meest verkocht eerst")}>Meest verkocht eerst</button>
+                      <button type="button" className="cheapest-button" onClick={() => console.log("Goedkoopste eerst")}>Goedkoopste eerst</button>
+                      <button type="button" className="sport-button" onClick={() => console.log("Meest geschikt voor sport eerst")}>Meest geschikt voor sport eerst</button>
                   </div>
               </section>
           </main>
