@@ -7,7 +7,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: dashed yellow;
 }
 
 .inventory-container {
@@ -101,7 +100,8 @@
     gap: 1rem;
     max-width: 50rem;
     height: auto;
-    border: dashed grey;
+    border-radius: 5px;
+    border: dashed grey thin;
     background-color: lightgrey;
     margin: 10px;
     padding: 6px;
