@@ -1,0 +1,177 @@
+
+
+/* CONTAINERS */
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50rem;
+    gap: 2rem;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.all-tvs-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 10px;
+}
+
+.best-selling-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50rem;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.section {
+    width: min(50rem, 100%);
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* DASHBOARD */
+
+.sold-tvs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: palegreen;
+}
+
+.bought-tvs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.to-sell-tvs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+    color: darkred;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    background-color: indianred;
+}
+
+/* BEST TV */
+
+.best-tv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 50rem;
+    height: auto;
+    border-radius: 5px;
+    border: dashed grey thin;
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 6px;
+}
+
+.tv-image-box {
+    max-width: 7rem;
+}
+
+.best-tv-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: large;
+}
+
+.best-tv-price {
+    font-size: 25px;
+}
+
+.icons {
+    width: 15px;
+}
+
+.options-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 2rem 0 2rem;
+}
+
+/* ALL TVs */
+
+.all-tvs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50rem;
+    gap: 2rem;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.all-tvs-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 50rem;
+    height: auto;
+    margin: 10px;
+    padding: 6px;
+}
+
+.all-tv-brands li {
+    list-style: none;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
