@@ -47,7 +47,6 @@
     width: min(50rem, 100%);
     margin: 10px 0;
     padding: 10px;
-    border: dashed black;
 }
 
 /* DASHBOARD */
@@ -169,3 +168,10 @@
     list-style: none;
 }
 
+.option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}

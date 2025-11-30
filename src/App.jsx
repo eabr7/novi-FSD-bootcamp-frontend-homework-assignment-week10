@@ -2,7 +2,7 @@ import './App.css';
 import totalSold from "./helpers/totalSold";
 import inStock from "./helpers/inStock";
 import totalAcquisition from "./helpers/totalAcquisition";
-import {inventory, bestSellingTv} from "./constants/inventory.js";
+import {bestSellingTv, inventory} from "./constants/inventory.js";
 import tvName from "./helpers/tvName.js";
 import tvPrice from "./helpers/tvPrice.js";
 import tvSizes from "./helpers/tvSizes.js";
@@ -88,16 +88,29 @@ function App() {
                               <p className="best-tv-price">{tvPrice(tv)}</p>
                               <p>{tvSizes(tv)}</p>
                               <div className="options-row">
-                                  <img className="icons" src={checkIcon} alt="Check Icon"/>
-                                  <p>Wifi</p>
-                                  <img className="icons" src={minusIcon} alt="Check Icon"/>
-                                  <p>Speech</p>
-                                  <img className="icons" src={checkIcon} alt="Check Icon"/>
-                                  <p>HDR</p>
-                                  <img className="icons" src={checkIcon} alt="Check Icon"/>
-                                  <p>Bluetooth</p>
-                                  <img className="icons" src={minusIcon} alt="Check Icon"/>
-                                  <p>Ambilight</p>
+                              {tv.options.map((option) => {
+                                  let icon;
+                                  let text;
+
+                                  if (option.applicable === true) {
+                                      icon = checkIcon;
+                                      text = "check";
+                                  } else {
+                                      icon = minusIcon;
+                                      text = "minus";
+                                  }
+
+                                  return (
+                                      <div key={option.name} className="option">
+                                          <img
+                                              className="icons"
+                                              src={icon}
+                                              alt={text}
+                                          />
+                                          <p>{option.name}</p>
+                                      </div>
+                                  );
+                              })}
                               </div>
                           </div>
                       </article>
