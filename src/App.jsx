@@ -10,9 +10,15 @@ import tvImage from './assets/tvImage.jpeg';
 import checkIcon from './assets/check.png';
 import minusIcon from './assets/minus.png';
 import showOefeningOneInConsole from './constants/oefenbestand.js';
+import sortMostSold from "./helpers/sortMostSold.js";
+import sortCheapest from "./helpers/sortCheapest.js";
+import sortSportProduct from "./helpers/sortSportProduct.js";
 
 function App() {
     showOefeningOneInConsole();
+    sortMostSold();
+    sortCheapest();
+    sortSportProduct();
 
     return (
       <>
